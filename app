@@ -35,7 +35,7 @@ public class Untitled {
 
     @Test
     public void testUntitled() {
-        driver.get("http://");
+        driver.get("http:/C:\TESTN\ShaadiAppLogin\shaadi.apk");
         driver.findElement(By.xpath("//*[@text='Shaadi']")).click();
         new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Login']")));
         driver.findElement(By.xpath("//*[@text='Login']")).click();
@@ -45,12 +45,9 @@ public class Untitled {
         driver.findElement(By.xpath("//*[@text='Login']")).click();
         new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='imgMyShaadi']")));
         driver.findElement(By.xpath("//*[@id='imgMyShaadi']")).click();
-        driver.swipe(309, 1168, 309, 906, 811);
         driver.findElement(By.xpath("//*[@text='Upgrade Now']")).click();
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@contentDescription='Navigate up']")));
         driver.findElement(By.xpath("//*[@contentDescription='Navigate up']")).click();
-        driver.swipe(481, 1137, 481, -43, 1500);
-        driver.swipe(481, 1268, 481, 875, 973);
         driver.findElement(By.xpath("//*[@text='Connect Now' and ./parent::*[./parent::*[(./preceding-sibling::* | ./following-sibling::*)[./*[@text='Ishant G']]]]]")).click();
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Upgrade Now']")));
         driver.findElement(By.xpath("//*[@text='Upgrade Now']")).click();
